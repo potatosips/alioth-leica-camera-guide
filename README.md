@@ -10,6 +10,15 @@ controls do nothing, because a working camera needs the application, Android
 framework, camera provider, HAL, firmware, tuning data, and SELinux policy to
 agree with each other.
 
+## Downloads
+
+The verified installation artifacts are published as GitHub Release assets:
+
+https://github.com/potatosips/alioth-leica-camera-guide/releases/tag/20260726-alioth-leica-camera
+
+Read the release checklist and verify SHA-256 before flashing. The exact build
+commands and artifact collection process are in [docs/BUILD.md](docs/BUILD.md).
+
 ## Final result
 
 | Item | Used value |
