@@ -18,6 +18,7 @@ https://github.com/potatosips/alioth-leica-camera-guide/releases/tag/20260726-al
 
 Read the release checklist and verify SHA-256 before flashing. The exact build
 commands and artifact collection process are in [docs/BUILD.md](docs/BUILD.md).
+The source modifications are published in [patches](patches).
 
 ## Final result
 

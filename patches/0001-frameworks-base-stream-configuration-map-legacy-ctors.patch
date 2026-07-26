@@ -1,0 +1,81 @@
+Exit code: 0
+Wall time: 1.9 seconds
+Output:
+diff --git a/core/java/android/hardware/camera2/params/StreamConfigurationMap.java b/core/java/android/hardware/camera2/params/StreamConfigurationMap.java
+index 323459d5..ee685340 100644
+--- a/core/java/android/hardware/camera2/params/StreamConfigurationMap.java
++++ b/core/java/android/hardware/camera2/params/StreamConfigurationMap.java
+@@ -75,0 +76,73 @@ public final class StreamConfigurationMap {
++    /**
++     * Android 13 binary-compatibility constructor.
++     *
++     * @hide
++     */
++    public StreamConfigurationMap(
++            StreamConfiguration[] configurations,
++            StreamConfigurationDuration[] minFrameDurations,
++            StreamConfigurationDuration[] stallDurations,
++            StreamConfiguration[] depthConfigurations,
++            StreamConfigurationDuration[] depthMinFrameDurations,
++            StreamConfigurationDuration[] depthStallDurations,
++            StreamConfiguration[] dynamicDepthConfigurations,
++            StreamConfigurationDuration[] dynamicDepthMinFrameDurations,
++            StreamConfigurationDuration[] dynamicDepthStallDurations,
++            StreamConfiguration[] heicConfigurations,
++            StreamConfigurationDuration[] heicMinFrameDurations,
++            StreamConfigurationDuration[] heicStallDurations,
++            HighSpeedVideoConfiguration[] highSpeedVideoConfigurations,
++            ReprocessFormatsMap inputOutputFormatsMap,
++            boolean listHighResolution) {
++        this(configurations, minFrameDurations, stallDurations,
++                depthConfigurations, depthMinFrameDurations, depthStallDurations,
++                dynamicDepthConfigurations, dynamicDepthMinFrameDurations,
++                dynamicDepthStallDurations,
++                heicConfigurations, heicMinFrameDurations, heicStallDurations,
++                /* jpegRConfigurations */ null,
++                /* jpegRMinFrameDurations */ null,
++                /* jpegRStallDurations */ null,
++                /* heicUltraHDRConfigurations */ null,
++                /* heicUltraHDRMinFrameDurations */ null,
++                /* heicUltraHDRStallDurations */ null,
++                highSpeedVideoConfigurations, inputOutputFormatsMap,
++                listHighResolution, /* enforceImplementationDefined */ true);
++    }
++
++    /**
++     * Android 14 binary-compatibility constructor.
++     *
++     * @hide
++     */
++    public StreamConfigurationMap(
++            StreamConfiguration[] configurations,
++            StreamConfigurationDuration[] minFrameDurations,
++            StreamConfigurationDuration[] stallDurations,
++            StreamConfiguration[] depthConfigurations,
++            StreamConfigurationDuration[] depthMinFrameDurations,
++            StreamConfigurationDuration[] depthStallDurations,
++            StreamConfiguration[] dynamicDepthConfigurations,
++            StreamConfigurationDuration[] dynamicDepthMinFrameDurations,
++            StreamConfigurationDuration[] dynamicDepthStallDurations,
++            StreamConfiguration[] heicConfigurations,
++            StreamConfigurationDuration[] heicMinFrameDurations,
++            StreamConfigurationDuration[] heicStallDurations,
++            StreamConfiguration[] jpegRConfigurations,
++            StreamConfigurationDuration[] jpegRMinFrameDurations,
++            StreamConfigurationDuration[] jpegRStallDurations,
++            HighSpeedVideoConfiguration[] highSpeedVideoConfigurations,
++            ReprocessFormatsMap inputOutputFormatsMap,
++            boolean listHighResolution) {
++        this(configurations, minFrameDurations, stallDurations,
++                depthConfigurations, depthMinFrameDurations, depthStallDurations,
++                dynamicDepthConfigurations, dynamicDepthMinFrameDurations,
++                dynamicDepthStallDurations,
++                heicConfigurations, heicMinFrameDurations, heicStallDurations,
++                jpegRConfigurations, jpegRMinFrameDurations, jpegRStallDurations,
++                /* heicUltraHDRConfigurations */ null,
++                /* heicUltraHDRMinFrameDurations */ null,
++                /* heicUltraHDRStallDurations */ null,
++                highSpeedVideoConfigurations, inputOutputFormatsMap,
++                listHighResolution, /* enforceImplementationDefined */ true);
++    }
++
