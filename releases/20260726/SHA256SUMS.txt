@@ -7,6 +7,8 @@
 d3a6a2c4a9865080d67186211c9f44926a1f5caeccb521e749a876faa770ab2d  lineage-23.2-20260726-UNOFFICIAL-alioth.zip
 ad8453bf3ce5360f35355e7fcad794f1421b8f830b5f3da92cc695a0a7262992  lineage-23.2-20260726-UNOFFICIAL-alioth-vendor_boot.img
 5b33b972cb9bcf39170a0cab8c5d456d80d9ed2f666206e5e69e3dd4ecf3f035  lineage-23.2-20260726-UNOFFICIAL-alioth-camera-framework-system.img
+# Post-install compatibility asset
+d0ae52fd436516526185ee25dc9b3ad8765869ca3f9fda579eca4fec231a2340  LeicaGalleryCompat-v1.apk
 #
 # External dependency not hosted in this release:
 # NikGapps-core-arm64-16-20260222-signed.zip

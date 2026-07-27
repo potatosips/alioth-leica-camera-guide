@@ -20,6 +20,11 @@ Read the release checklist and verify SHA-256 before flashing. The exact build
 commands and artifact collection process are in [docs/BUILD.md](docs/BUILD.md).
 The source modifications are published in [patches](patches).
 
+For the separate post-capture thumbnail issue on a vanilla build without MIUI
+Gallery, see [Post-capture review fix](docs/POST_CAPTURE_REVIEW_FIX.md). It
+uses a tiny compatibility package; it does not replace MiuiCamera or Google
+Photos.
+
 ## Final result
 
 | Item | Used value |

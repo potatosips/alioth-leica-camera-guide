@@ -11,7 +11,8 @@ documented in this repository.
 | lineage-23.2-20260726-UNOFFICIAL-alioth.zip | 1,527,669,804 bytes | Initial ROM installation |
 | lineage-23.2-20260726-UNOFFICIAL-alioth-vendor_boot.img | 100,663,296 bytes | Matching vendor_boot / recovery image |
 | lineage-23.2-20260726-UNOFFICIAL-alioth-camera-framework-system.img | 1,277,485,540 bytes | Final Android camera-framework compatibility correction |
-| SHA256SUMS.txt | small | Checksums for the three hosted files |
+| LeicaGalleryCompat-v1.apk | small | Fixes the first-tap recent-photo review issue on vanilla builds without MIUI Gallery |
+| SHA256SUMS.txt | small | Checksums for the hosted files |
 
 Verify every downloaded release asset before flashing:
 
@@ -52,6 +53,10 @@ sha256sum -c SHA256SUMS.txt
    command on another device or an unknown partition layout.
 6. Boot system and test Camera before flashing a custom kernel, KernelSU, or
    performance modules.
+7. If a newly captured photo's thumbnail does nothing until Camera is
+   restarted, install `LeicaGalleryCompat-v1.apk`, restart Camera, and retest.
+   This package is only for builds that do not already have real MIUI Gallery.
+   Full rationale and source are in docs/POST_CAPTURE_REVIEW_FIX.md.
 
 ## Expected camera result
 
